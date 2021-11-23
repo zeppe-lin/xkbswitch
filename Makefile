@@ -5,7 +5,7 @@ all: xkbswitch xkbswitch.1
 .c.o:
 	$(CC) $(CFLAGS) -c $<
 
-xkbswitch.1: xkbswitch.1.pod
+xkbswitch.1: README.pod
 	pod2man -c "General Commands Manual" -s 1 -n xkbswitch -r $(VERSION) \
 		$^ > $@
 
@@ -24,4 +24,4 @@ clean:
 	rm -f xkbswitch{,.o,.1}
 
 
-.PHONY: all clean install uninstall
+.PHONY: all install uninstall clean
