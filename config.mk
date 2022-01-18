@@ -1,5 +1,5 @@
 # xkbswitch version
-VERSION = 0.1
+VERSION = 0.1.1
 
 # customize below to fit your system
 
