@@ -9,9 +9,8 @@ all: xkbswitch xkbswitch.1
 .c.o:
 	$(CC) -c $(CPPFLAGS) $(CFLAGS) $<
 
-xkbswitch.1: README.pod
-	pod2man -c "General Commands Manual" -s 1 -n xkbswitch \
-		-r $(VERSION) $^ > $@
+%: %.pod
+	pod2man -c ' ' -n xkbswitch -r $(VERSION) $^ > $@
 
 xkbswitch: xkbswitch.o
 	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
@@ -25,7 +24,6 @@ uninstall:
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/xkbswitch.1
 
 clean:
-	rm xkbswitch xkbswitch.o xkbswitch.1
-
+	rm -f xkbswitch xkbswitch.o xkbswitch.1
 
 .PHONY: all install uninstall clean
