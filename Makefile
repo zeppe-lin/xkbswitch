@@ -1,27 +1,31 @@
+# See LICENSE file for copyright and license details.
+
+.POSIX:
+
 include config.mk
 
 all: xkbswitch xkbswitch.1
 
 .c.o:
-	$(CC) $(CFLAGS) -c $<
+	$(CC) -c $(CPPFLAGS) $(CFLAGS) $<
 
 xkbswitch.1: README.pod
-	pod2man -c "General Commands Manual" -s 1 -n xkbswitch -r $(VERSION) \
-		$^ > $@
+	pod2man -c "General Commands Manual" -s 1 -n xkbswitch \
+		-r $(VERSION) $^ > $@
 
 xkbswitch: xkbswitch.o
-	$(CC) -o $@ $^ $(LDFLAGS)
+	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
 
 install: all
-	install -d $(DESTDIR)/usr/{bin,share/man/man1}
-	install -m 755 xkbswitch   $(DESTDIR)/usr/bin/
-	install -m 644 xkbswitch.1 $(DESTDIR)/usr/share/man/man1/
+	install -m 755 -Dt $(DESTDIR)$(PREFIX)/bin/     xkbswitch
+	install -m 644 -Dt $(DESTDIR)$(MANPREFIX)/man1/ xkbswitch.1
 
 uninstall:
-	rm -f $(DESTDIR)/usr/{bin,share/man/man1}/xkbswitch{,.1}
+	rm -f $(DESTDIR)$(PREFIX)/bin/xkbswitch
+	rm -f $(DESTDIR)$(MANPREFIX)/man1/xkbswitch.1
 
 clean:
-	rm -f xkbswitch{,.o,.1}
+	rm xkbswitch xkbswitch.o xkbswitch.1
 
 
 .PHONY: all install uninstall clean
