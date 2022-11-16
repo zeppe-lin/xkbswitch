@@ -8,21 +8,21 @@ include config.mk
 all: xkbswitch xkbswitch.1
 
 .c.o:
-	$(CC) -c $(CPPFLAGS) $(CFLAGS) $<
+	${CC} -c ${CFLAGS} ${CPPFLAGS} $<
 
 %: %.pod
-	pod2man -c ' ' -n xkbswitch -r $(VERSION) $^ > $@
+	pod2man -c ' ' -n xkbswitch -r ${VERSION} $^ > $@
 
 xkbswitch: xkbswitch.o
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	${CC} -o $@ ${LDFLAGS} $^
 
 install: all
-	install -m 755 -Dt $(DESTDIR)$(PREFIX)/bin/     xkbswitch
-	install -m 644 -Dt $(DESTDIR)$(MANPREFIX)/man1/ xkbswitch.1
+	install -m 0755 -Dt ${DESTDIR}${PREFIX}/bin/     xkbswitch
+	install -m 0644 -Dt ${DESTDIR}${MANPREFIX}/man1/ xkbswitch.1
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/xkbswitch
-	rm -f $(DESTDIR)$(MANPREFIX)/man1/xkbswitch.1
+	rm -f ${DESTDIR}${PREFIX}/bin/xkbswitch
+	rm -f ${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
 
 clean:
 	rm -f xkbswitch xkbswitch.o xkbswitch.1
