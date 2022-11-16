@@ -1,3 +1,6 @@
+# This file is a part of xkbswitch.
+# See the COPYING and COPYRIGHT files for corresponding information.
+
 # xkbswitch version
 VERSION = 0.1.1
 
