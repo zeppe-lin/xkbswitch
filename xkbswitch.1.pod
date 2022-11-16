@@ -1,3 +1,6 @@
+# This file is a part of xkbswitch.
+# See the COPYING and COPYRIGHT files for corresponding information.
+
 =pod
 
 =head1 NAME
@@ -10,14 +13,18 @@ B<xkbswitch> [I<0|1|2|3>]
 
 =head1 DESCRIPTION
 
-B<xkbswitch> sets (or gets) the current keyboard layout group index in the
-range of 0..3 (since 4 group limit is forced by the XKB protocol format).
+B<xkbswitch> sets (or gets) the current keyboard layout group index in
+the range of 0..3 (since 4 group limit is forced by the XKB protocol
+format).
 
-If no arguments are given, then B<xkbswitch> prints the current keyboard
-layout group index.
+If no arguments are given, then B<xkbswitch> prints the current
+keyboard layout group index.
 
 =head1 SEE ALSO
 
 L<setxkbmap(1)>
 
 =cut
+
+# vim:sw=2:ts=2:sts=2:et:cc=72:tw=70
+# End of file.
