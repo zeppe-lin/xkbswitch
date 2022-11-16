@@ -1,4 +1,5 @@
-# See LICENSE file for copyright and license details.
+# This file is a part of xkbswitch.
+# See the COPYING and COPYRIGHT files for corresponding information.
 
 .POSIX:
 
@@ -27,3 +28,6 @@ clean:
 	rm -f xkbswitch xkbswitch.o xkbswitch.1
 
 .PHONY: all install uninstall clean
+
+# vim:cc=72:tw=70
+# End of file.
