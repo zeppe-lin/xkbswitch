@@ -2,7 +2,7 @@
 # See the COPYING and COPYRIGHT files for corresponding information.
 
 # xkbswitch version
-VERSION = 0.1.2
+VERSION = 0.1.3
 
 # customize below to fit your system
 
