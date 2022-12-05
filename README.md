@@ -14,7 +14,7 @@ Build time:
 Install
 -------
 The shell commands `make; make install` should build and install this
-package.  See `./config.mk` file for configuration parameters.
+package.  See `config.mk` file for configuration parameters.
 
 
 License and Copyright
