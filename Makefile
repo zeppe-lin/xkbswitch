@@ -1,5 +1,4 @@
-# This file is a part of xkbswitch.
-# See the COPYING and COPYRIGHT files for corresponding information.
+# See LICENSE file for copyright and license details.
 
 .POSIX:
 
