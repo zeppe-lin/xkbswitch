@@ -1,6 +1,4 @@
-/* This file is a part of xkbswitch.
- * See the COPYING and COPYRIGHT files for corresponding information.
- */
+// See LICENSE file for copyright and license details.
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -46,13 +44,13 @@ int main(int argc, char **argv)
 
   if (argc == 1)
   {
-    /* Get layout group index in [0..3] */
+    // Get layout group index in [0..3].
     status = XkbGetState(display, XkbUseCoreKbd, &state);
     printf("%d\n", state.group);
   }
   else if (argc == 2)
   {
-    /* Set layout or print usage msg if arg is not in [0..3] */
+    // Set layout or print usage msg if arg is not in [0..3].
     if (strlen(argv[1]) > 1 || argv[1][0] < 48 || argv[1][0] > 51)
       goto usage;
 
@@ -61,9 +59,9 @@ int main(int argc, char **argv)
   else
   {
  usage:
-    puts("xkbswitch - set/get current layout group index in [0..3]\n"
-         "usage: xkbswitch [0..3]\n"
-         "If no args then just prints current layout group index\n");
+    printf("Usage: %s [0..3]\n"
+           "Set/Get current layout group index in range [0..3].\n",
+           argv[0]);
   }
 
   XCloseDisplay(display);
