@@ -14,7 +14,7 @@ all: xkbswitch xkbswitch.1
 	pod2man -c ' ' -n xkbswitch -r ${VERSION} $^ > $@
 
 xkbswitch: xkbswitch.o
-	${CC} -o $@ ${LDFLAGS} $^
+	${LD} -o $@ ${LDFLAGS} $^
 
 install: all
 	install -m 0755 -Dt ${DESTDIR}${PREFIX}/bin/     xkbswitch
