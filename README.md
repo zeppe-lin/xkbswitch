@@ -7,7 +7,8 @@ Dependencies
 ------------
 Build time:
 - c99 compiler
-- podchecker(1p) and pod2man(1p) from perl distribution
+- POSIX sh(1p) and utilities like mkdir(1p), cp(1p), chmod(1p), rm(1p)
+- podchecker(1pm) and pod2man(1pm) from perl distribution
 - libX11
 
 
