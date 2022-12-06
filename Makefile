@@ -17,12 +17,14 @@ xkbswitch: xkbswitch.o
 	${LD} -o $@ ${LDFLAGS} $^
 
 install: all
-	install -m 0755 -Dt ${DESTDIR}${PREFIX}/bin/     xkbswitch
-	install -m 0644 -Dt ${DESTDIR}${MANPREFIX}/man1/ xkbswitch.1
+	mkdir -p ${DESTDIR}${BINDIR}
+	mkdir -p ${DESTDIR}${MANDIR}/man1
+	cp xkbswitch   ${DESTDIR}${BINDIR}/
+	cp xkbswitch.1 ${DESTDIR}${MANDIR}/man1/
 
 uninstall:
-	rm -f ${DESTDIR}${PREFIX}/bin/xkbswitch
-	rm -f ${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
+	rm -f ${DESTDIR}${BINDIR}/xkbswitch
+	rm -f ${DESTDIR}${MANDIR}/man1/xkbswitch.1
 
 clean:
 	rm -f xkbswitch xkbswitch.o xkbswitch.1

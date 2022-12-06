@@ -7,7 +7,8 @@ VERSION = 0.1.3
 
 # paths
 PREFIX = /usr/local
-MANPREFIX = ${PREFIX}/share/man
+BINDIR = ${PREFIX}/bin
+MANDIR = ${PREFIX}/share/man
 
 X11INC = /usr/local/include
 X11LIB = /usr/local/lib
