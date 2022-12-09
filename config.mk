@@ -1,14 +1,9 @@
-# See LICENSE file for copyright and license details.
-
 # xkbswitch version
 VERSION = 0.1.3
 
-# customize below to fit your system
-
 # paths
 PREFIX = /usr/local
-BINDIR = ${PREFIX}/bin
-MANDIR = ${PREFIX}/share/man
+MANPREFIX = ${PREFIX}/share/man
 
 X11INC = /usr/local/include
 X11LIB = /usr/local/lib
@@ -26,6 +21,3 @@ LDFLAGS = ${LIBS}
 # compiler and linker
 CC = cc
 LD = ${CC}
-
-# vim:cc=72:tw=70
-# End of file.
