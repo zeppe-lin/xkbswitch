@@ -1,10 +1,8 @@
-# See LICENSE file for copyright and license details.
-
 =pod
 
 =head1 NAME
 
-xkbswitch - keyboard layout switcher for X11
+xkbswitch - keyboard layout switcher for X
 
 =head1 SYNOPSIS
 
@@ -24,6 +22,3 @@ keyboard layout group index.
 L<setxkbmap(1)>
 
 =cut
-
-# vim:sw=2:ts=2:sts=2:et:cc=72:tw=70
-# End of file.
