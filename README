@@ -1,0 +1,16 @@
+ABOUT xkbswitch
+
+    This directory contains xkbswitch.
+    xkbswitch is a tiny keyboard layout switcher for X.
+
+REQUIREMENTS
+
+    * c99 compiler
+    * POSIX sh(1p), make(1p) and utilities
+    * pod2man(1pm)
+    * libX11
+
+LICENSE
+
+    xkbswitch is licensed through WTFPLv2 License.
+    See LICENSE file for copyright and license details.
