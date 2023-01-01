@@ -13,6 +13,10 @@ xkbswitch.1: xkbswitch.1.pod
 xkbswitch: xkbswitch.o
 	${LD} $^ ${LDFLAGS} -o $@
 
+check:
+	@echo "=======> Check POD for errors"
+	@podchecker xkbswitch.1.pod
+
 install: all
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	mkdir -p ${DESTDIR}${MANPREFIX}/man1
