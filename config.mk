@@ -2,7 +2,7 @@
 VERSION = 0.1.3
 
 # paths
-PREFIX = /usr/local
+PREFIX    = /usr/local
 MANPREFIX = ${PREFIX}/share/man
 
 X11INC = /usr/local/include
@@ -15,8 +15,8 @@ LIBS = -L${X11LIB} -lX11
 # flags
 CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_S_SOURCE=200809L \
 	   -DVERSION=\"${VERSION}\" ${INCS}
-CFLAGS = -std=c99 -pedantic -Wall -Wextra
-LDFLAGS = ${LIBS}
+CFLAGS   = -std=c99 -pedantic -Wall -Wextra
+LDFLAGS  = ${LIBS}
 
 # compiler and linker
 CC = cc
