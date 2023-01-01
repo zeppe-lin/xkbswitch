@@ -14,8 +14,10 @@ xkbswitch: xkbswitch.o
 	${LD} $^ ${LDFLAGS} -o $@
 
 check:
-	@echo "=======> Check POD for errors"
+	@echo "=======> Check PODs for errors"
 	@podchecker xkbswitch.1.pod
+	@echo "=======> Check URLs for non-200 response code"
+	@grep -Eiho "https?://[^\"\\'> ]+" *.* | httpx -silent -fc 200 -sc
 
 install: all
 	mkdir -p       ${DESTDIR}${PREFIX}/bin
