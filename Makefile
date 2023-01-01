@@ -7,8 +7,8 @@ all: xkbswitch xkbswitch.1
 .c.o:
 	${CC} -c ${CFLAGS} ${CPPFLAGS} $<
 
-%: %.pod
-	pod2man -c ' ' -n xkbswitch -r ${VERSION} $^ > $@
+xkbswitch.1: xkbswitch.1.pod
+	pod2man -c ' ' -n xkbswitch -r ${VERSION} $< > $@
 
 xkbswitch: xkbswitch.o
 	${LD} $^ ${LDFLAGS} -o $@
