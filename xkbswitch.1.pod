@@ -19,6 +19,6 @@ keyboard layout group index.
 
 =head1 SEE ALSO
 
-L<setxkbmap(1)>
+L<setxkbmap(1)|https://www.mankier.com/1/setxkbmap>
 
 =cut
