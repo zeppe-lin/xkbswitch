@@ -18,8 +18,8 @@ check:
 	@podchecker xkbswitch.1.pod
 
 install: all
-	mkdir -p ${DESTDIR}${PREFIX}/bin
-	mkdir -p ${DESTDIR}${MANPREFIX}/man1
+	mkdir -p       ${DESTDIR}${PREFIX}/bin
+	mkdir -p       ${DESTDIR}${MANPREFIX}/man1
 	cp xkbswitch   ${DESTDIR}${PREFIX}/bin/
 	cp xkbswitch.1 ${DESTDIR}${MANPREFIX}/man1/
 
