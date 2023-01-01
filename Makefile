@@ -8,7 +8,6 @@ all: xkbswitch xkbswitch.1
 	${CC} -c ${CFLAGS} ${CPPFLAGS} $<
 
 %: %.pod
-	podchecker $^
 	pod2man -c ' ' -n xkbswitch -r ${VERSION} $^ > $@
 
 xkbswitch: xkbswitch.o
