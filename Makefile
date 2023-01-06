@@ -21,6 +21,6 @@ uninstall:
 	rm -f ${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
 
 clean:
-	rm -f xkbswitch xkbswitch.o xkbswitch.1
+	rm -f xkbswitch xkbswitch.o
 
 .PHONY: all install uninstall clean
