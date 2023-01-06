@@ -7,17 +7,8 @@ all: xkbswitch xkbswitch.1
 .c.o:
 	${CC} -c ${CFLAGS} ${CPPFLAGS} $<
 
-xkbswitch.1: xkbswitch.1.pod
-	pod2man -c ' ' -n xkbswitch -r ${VERSION} $< > $@
-
 xkbswitch: xkbswitch.o
 	${LD} $^ ${LDFLAGS} -o $@
-
-check:
-	@echo "=======> Check PODs for errors"
-	@podchecker xkbswitch.1.pod
-	@echo "=======> Check URLs for non-200 response code"
-	@grep -Eiho "https?://[^\"\\'> ]+" *.* | httpx -silent -fc 200 -sc
 
 install: all
 	mkdir -p       ${DESTDIR}${PREFIX}/bin
