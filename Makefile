@@ -15,6 +15,8 @@ install: all
 	mkdir -p       ${DESTDIR}${MANPREFIX}/man1
 	cp xkbswitch   ${DESTDIR}${PREFIX}/bin/
 	cp xkbswitch.1 ${DESTDIR}${MANPREFIX}/man1/
+	chmod 0755     ${DESTDIR}${PREFIX}/bin/xkbswitch
+	chmod 0644     ${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/xkbswitch
