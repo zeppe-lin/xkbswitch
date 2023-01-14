@@ -1,4 +1,4 @@
-.TH XKBSWITCH 1
+.TH XKBSWITCH 1 xkbswitch\-@VERSION@
 
 .SH NAME
 xkbswitch \- keyboard layout switcher for X
