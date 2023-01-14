@@ -10,6 +10,9 @@ all: xkbswitch xkbswitch.1
 xkbswitch: xkbswitch.o
 	${LD} $^ ${LDFLAGS} -o $@
 
+xkbswitch.1: xkbswitch.1.in
+	sed "s/@VERSION@/${VERSION}/" $< > $@
+
 install: all
 	mkdir -p          ${DESTDIR}${PREFIX}/bin
 	mkdir -p          ${DESTDIR}${MANPREFIX}/man1
@@ -23,6 +26,6 @@ uninstall:
 	rm -f ${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
 
 clean:
-	rm -f xkbswitch xkbswitch.o
+	rm -f xkbswitch xkbswitch.o xkbswitch.1
 
 .PHONY: all install uninstall clean
