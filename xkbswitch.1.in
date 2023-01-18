@@ -1,6 +1,6 @@
 .\" See LICENSE file for copyright and license details.
 
-.TH XKBSWITCH 1 xkbswitch\-@VERSION@
+.TH XKBSWITCH 1 "January 2023" "xkbswitch @VERSION@"
 
 .SH NAME
 xkbswitch \- keyboard layout switcher for X
@@ -14,7 +14,7 @@ xkbswitch \- keyboard layout switcher for X
 .B xkbswitch
 sets (or gets) the current keyboard layout group index in the range of
 0..3 (since 4 group limit is forced by the XKB protocol format).
-.br
+.P
 If no arguments are given, then
 .B xkbswitch
 print the current layout group index.
