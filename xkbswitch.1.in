@@ -20,4 +20,4 @@ If no arguments are given, then
 print the current layout group index.
 
 .SH SEE ALSO
-setxkbmap(1)
+.BR setxkbmap (1)
