@@ -1,6 +1,6 @@
 ABOUT
 -----
-This directory contains *xkbswitch*,
+This directory contains _xkbswitch_,
 a tiny keyboard layout switcher for X.
 
 REQUIREMENTS
@@ -12,5 +12,5 @@ Build time:
 
 LICENSE
 -------
-*xkbswitch* is licensed through WTFPLv2 License.
-See *LICENSE* file for copyright and license details.
+_xkbswitch_ is licensed through WTFPLv2 License.
+See _LICENSE_ file for copyright and license details.
