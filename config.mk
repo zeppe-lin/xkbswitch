@@ -1,4 +1,5 @@
-# xkbswitch version
+# project metadata
+NAME = xkbswitch
 VERSION = 0.1.4
 
 # paths
