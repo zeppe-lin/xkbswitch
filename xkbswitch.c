@@ -43,14 +43,14 @@ int main(int argc, char **argv)
 
 	if (argc == 1) {
 		/*
-		 * get layout group index in [0..3]
+		 * Get layout group index in [0..3].
 		 */
 		status = XkbGetState(display, XkbUseCoreKbd, &state);
 		printf("%d\n", state.group);
 
 	} else if (argc == 2) {
 		/*
-		 * set layout or print usage msg if arg is not in [0..3]
+		 * Set layout or print usage msg if arg is not in [0..3].
 		 */
 		if (strlen(argv[1]) > 1 || argv[1][0] < 48 ||
 		    argv[1][0] > 51)
