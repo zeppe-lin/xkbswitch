@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <err.h>
+/* libX11 */
 #include <X11/Xlib.h>
 #include <X11/XKBlib.h>
 
