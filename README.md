@@ -1,19 +1,17 @@
 OVERVIEW
+--------
+This directory contains xkbswitch, a tiny keyboard layout switcher for X.
 
-	This directory contains xkbswitch, a tiny keyboard layout switcher
-	for X.
 
 REQUIREMENTS
+------------
+**Build time**:
+- c99 compiler
+- POSIX sh(1p), make(1p) and "mandatory utilities"
+- libX11
 
-	Build time:
-
-		* c99 compiler
-		* POSIX sh(1p), make(1p) and "mandatory utilities"
-		* libX11
 
 LICENSE
-
-	xkbswitch is licensed through WTFPLv2 License.
-	See LICENSE file for copyright and license details.
-
-End of file.
+-------
+xkbswitch is licensed through WTFPLv2 License.
+See LICENSE file for copyright and license details.
