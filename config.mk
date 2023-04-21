@@ -1,6 +1,7 @@
 # project metadata
 NAME = xkbswitch
 VERSION = 0.1.4
+DIST = ${NAME}-${VERSION}
 
 # paths
 PREFIX    = /usr/local
