@@ -3,7 +3,7 @@
 .TH XKBSWITCH 1 "January 2023" "xkbswitch @VERSION@"
 
 .SH NAME
-xkbswitch \- keyboard layout switcher for X
+xkbswitch \(en keyboard layout switcher for X
 
 .SH SYNOPSIS
 .B xkbswitch
