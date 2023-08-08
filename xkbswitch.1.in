@@ -1,23 +1,19 @@
-.\" See LICENSE file for copyright and license details.
-
-.TH XKBSWITCH 1 "January 2023" "xkbswitch @VERSION@"
-
-.SH NAME
-xkbswitch \(en keyboard layout switcher for X
-
-.SH SYNOPSIS
-.B xkbswitch
-[ 0 | 1 | 2 | 3 ]
-.br
-
-.SH DESCRIPTION
-.B xkbswitch
+.Dd August 08, 2023
+.Dt XKBSWITCH 1
+.Os xkbswitch @VERSION@
+.Sh NAME
+.Nm xkbswitch
+.Nd keyboard layout switcher for X
+.Sh SYNOPSIS
+.Nm
+.Op Ar 0 | Ar 1 | Ar 2 | Ar 3
+.Sh DESCRIPTION
+.Nm
 sets (or gets) the current keyboard layout group index in the range of
-0..3 (since 4 group limit is forced by the XKB protocol format).
-.P
+0..3 (since 4 group limit is forced by XKB protocol format).
+.Pp
 If no arguments are given, then
-.B xkbswitch
-print the current layout group index.
-
-.SH SEE ALSO
-.BR setxkbmap (1)
+.Nm
+prints the current layout group index.
+.Sh SEE ALSO
+.Xr setxkbmap 1
