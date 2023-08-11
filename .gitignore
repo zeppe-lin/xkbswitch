@@ -1,0 +1,13 @@
+# build files and artefacts
+xkbswitch
+xkbswitch.o
+
+# vim undo and swap files
+.*.un~
+*.swp
+
+# backup files
+*.bak
+
+# dist tarballs
+*.tar.gz
