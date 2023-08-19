@@ -3,6 +3,10 @@
 include config.mk
 
 all: xkbswitch
+
+.c.o:
+	${CC} -c ${CFLAGS} ${CPPFLAGS} $<
+
 xkbswitch: xkbswitch.o
 
 install: all
