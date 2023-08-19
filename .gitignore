@@ -1,6 +1,5 @@
 # build files and artefacts
 xkbswitch
-xkbswitch.o
 
 # vim undo and swap files
 .*.un~
