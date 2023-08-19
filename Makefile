@@ -4,11 +4,6 @@ include config.mk
 
 all: xkbswitch
 
-.c.o:
-	${CC} -c ${CFLAGS} ${CPPFLAGS} $<
-
-xkbswitch: xkbswitch.o
-
 install: all
 	mkdir -p        ${DESTDIR}${PREFIX}/bin
 	mkdir -p        ${DESTDIR}${MANPREFIX}/man1
