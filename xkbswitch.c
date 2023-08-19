@@ -70,5 +70,5 @@ usage:
 	return status;
 }
 
-/* vim:cc=72:tw=70
+/* vim: cc=72 tw=70
  * End of file. */
