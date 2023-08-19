@@ -18,7 +18,7 @@ uninstall:
 	rm -f ${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
 
 clean:
-	rm -f xkbswitch xkbswitch.o
+	rm -f xkbswitch
 	rm -f ${DIST}.tar.gz
 
 dist: clean
