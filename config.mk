@@ -24,11 +24,7 @@ INCS      = -I${X11INC}
 LIBS      = -L${X11LIB} -lX11
 
 # flags
-CFLAGS    = -std=c99 -pedantic -Wall -Wextra \
+CFLAGS    = -pedantic -Wall -Wextra \
 	    -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_S_SOURCE=200809L \
 	    -DVERSION=\"${VERSION}\" ${INCS}
 LDFLAGS   = ${LIBS}
-
-# compiler and linker
-CC        = cc
-LD        = ${CC}
