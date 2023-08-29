@@ -6,7 +6,7 @@ This directory contains xkbswitch, a tiny keyboard layout switcher for X.
 REQUIREMENTS
 ------------
 **Build time**:
-- c99 compiler
+- C99 compiler
 - POSIX sh(1p), make(1p) and "mandatory utilities"
 - libX11
 
