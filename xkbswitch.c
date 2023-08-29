@@ -8,7 +8,8 @@
 #include <X11/Xlib.h>
 #include <X11/XKBlib.h>
 
-int main(int argc, char **argv)
+int
+main(int argc, char **argv)
 {
 	int xkbEventType, xkbError, xkbReason;
 	int mjr = XkbMajorVersion, mnr = XkbMinorVersion;
@@ -18,7 +19,7 @@ int main(int argc, char **argv)
 
 	display = XkbOpenDisplay(NULL, &xkbEventType, &xkbError, &mjr,
 	                         &mnr, &xkbReason);
-	if (NULL == display) {
+	if (display == NULL) {
 		warnx("Cannot open X display %s", XDisplayName(NULL));
 
 		switch (xkbReason) {
