@@ -5,13 +5,13 @@ include config.mk
 all: xkbswitch
 
 install: all
-	mkdir -p        ${DESTDIR}${PREFIX}/bin
-	mkdir -p        ${DESTDIR}${MANPREFIX}/man1
+	mkdir -p ${DESTDIR}${PREFIX}/bin
+	mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	cp -f xkbswitch ${DESTDIR}${PREFIX}/bin/
 	sed "s/@VERSION@/${VERSION}/g" xkbswitch.1 > \
-	                ${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
-	chmod 0755      ${DESTDIR}${PREFIX}/bin/xkbswitch
-	chmod 0644      ${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
+		${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
+	chmod 0755 ${DESTDIR}${PREFIX}/bin/xkbswitch
+	chmod 0644 ${DESTDIR}${MANPREFIX}/man1/xkbswitch.1
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/xkbswitch
