@@ -2,14 +2,17 @@
 .Dd August 8, 2023
 .Dt XKBSWITCH 1
 .Os xkbswitch @VERSION@
+.\" ==================================================================
 .Sh NAME
 .Nm xkbswitch
 .Nd keyboard layout switcher for X
+.\" ==================================================================
 .Sh SYNOPSIS
 .Nm
 .Oo
 .Cm 0 | 1 | 2 | 3
 .Oc
+.\" ==================================================================
 .Sh DESCRIPTION
 .Nm
 sets (or gets) the current keyboard layout group index in the range of
@@ -18,6 +21,7 @@ sets (or gets) the current keyboard layout group index in the range of
 If no arguments are given, then
 .Nm
 prints the current layout group index.
+.\" ==================================================================
 .Sh SEE ALSO
 .Xr setxkbmap 1
 .\" vim: cc=72 tw=70
