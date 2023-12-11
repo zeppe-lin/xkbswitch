@@ -1,6 +1,7 @@
 OVERVIEW
 --------
-This directory contains xkbswitch, a tiny keyboard layout switcher for X.
+This directory contains xkbswitch, a tiny keyboard layout
+switcher for X.
 
 
 REQUIREMENTS
