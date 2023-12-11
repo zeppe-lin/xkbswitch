@@ -12,6 +12,14 @@ REQUIREMENTS
 - libX11
 
 
+INSTALL
+-------
+The shell commands `make & make install` should build and
+install this package.
+
+See `config.mk` file for configuration parameters.
+
+
 LICENSE
 -------
 xkbswitch is licensed through WTFPLv2 License.
