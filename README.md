@@ -9,9 +9,9 @@ REQUIREMENTS
 
 Build time
 ----------
-- C99 compiler
-- POSIX sh(1p), make(1p) and "mandatory utilities"
-- libX11
+* C99 compiler
+* POSIX sh(1p), make(1p) and "mandatory utilities"
+* libX11
 
 
 INSTALL
