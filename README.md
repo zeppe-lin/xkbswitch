@@ -17,7 +17,8 @@ Build time
 INSTALL
 =======
 
-The shell commands `make & make install` should build and install this package.
+The shell commands `make && make install` should build and install this
+package.
 
 See `config.mk` file for configuration parameters.
 
