@@ -15,7 +15,7 @@ main(int argc, char **argv)
 	int mjr = XkbMajorVersion, mnr = XkbMinorVersion;
 	Display *display = NULL;
 	XkbStateRec state;
-	Bool status = True;
+	Bool rv = True;
 
 	display = XkbOpenDisplay(NULL, &xkbEventType, &xkbError, &mjr,
 	                         &mnr, &xkbReason);
@@ -47,7 +47,7 @@ main(int argc, char **argv)
 		/*
 		 * Get layout group index in [0..3].
 		 */
-		status = XkbGetState(display, XkbUseCoreKbd, &state);
+		rv = XkbGetState(display, XkbUseCoreKbd, &state);
 		printf("%d\n", state.group);
 
 	} else if (argc == 2) {
@@ -58,8 +58,7 @@ main(int argc, char **argv)
 		    argv[1][0] > 51)
 			goto usage;
 
-		status = XkbLockGroup(display, XkbUseCoreKbd,
-		                      atoi(argv[1]));
+		rv = XkbLockGroup(display, XkbUseCoreKbd, atoi(argv[1]));
 	} else {
 usage:
 		printf("Usage: %s [0..3]\n"
@@ -68,7 +67,7 @@ usage:
 	}
 
 	XCloseDisplay(display);
-	return status;
+	return rv ? 0 : 1;
 }
 
 /* vim: cc=72 tw=70
