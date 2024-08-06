@@ -26,5 +26,5 @@ LIBS      = -L${X11LIB} -lX11
 # flags
 CPPFLAGS  = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_S_SOURCE=200809L \
 	    -DVERSION=\"${VERSION}\" ${INCS}
-CFLAGS    = -pedantic -Wall -Wextra ${CPPFLAGS}
+CFLAGS    = -pedantic -Wall -Wextra -Wformat ${CPPFLAGS}
 LDFLAGS   = ${LIBS}
