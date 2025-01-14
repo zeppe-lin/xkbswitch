@@ -1,6 +1,6 @@
 # project metadata
 NAME      = xkbswitch
-VERSION   = 0.1.7
+VERSION   = 0.1.8
 DIST      = ${NAME}-${VERSION}
 
 # paths
@@ -25,6 +25,6 @@ LIBS      = -L${X11LIB} -lX11
 
 # flags
 CPPFLAGS  = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_S_SOURCE=200809L \
-	    -DVERSION=\"${VERSION}\" ${INCS}
+            -DVERSION=\"${VERSION}\" ${INCS}
 CFLAGS    = -pedantic -Wall -Wextra -Wformat ${CPPFLAGS}
 LDFLAGS   = ${LIBS}
