@@ -1,7 +1,8 @@
 OVERVIEW
 ========
 
-This directory contains xkbswitch, a tiny keyboard layout switcher for X.
+This repository contains xkbswitch, a tiny keyboard layout switcher
+for X.
 
 
 REQUIREMENTS
